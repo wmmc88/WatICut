@@ -1,0 +1,28 @@
+# Project: Drawing
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Drawing.o
+LINKOBJ  = Drawing.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -L"C:/Users/melvi/GrabCAD/Lego Router/TRON Router/Code/SFML-2.4.2/lib" -mwindows SFML-2.4.2/lib/sfml-audio-s.lib SFML-2.4.2/lib/sfml-graphics.lib SFML-2.4.2/lib/sfml-main.lib SFML-2.4.2/lib/sfml-network.lib SFML-2.4.2/lib/sfml-system.lib SFML-2.4.2/lib/sfml-window.lib SFML-2.4.2/lib/libFLAC.a SFML-2.4.2/lib/libfreetype.a SFML-2.4.2/lib/libjpeg.a SFML-2.4.2/lib/libogg.a SFML-2.4.2/lib/libopenal32.a SFML-2.4.2/lib/libsfml-audio.a SFML-2.4.2/lib/libsfml-audio-d.a SFML-2.4.2/lib/libsfml-audio-s.a SFML-2.4.2/lib/libsfml-audio-s-d.a SFML-2.4.2/lib/libsfml-graphics.a SFML-2.4.2/lib/libsfml-graphics-d.a SFML-2.4.2/lib/libsfml-graphics-s.a SFML-2.4.2/lib/libsfml-graphics-s-d.a SFML-2.4.2/lib/libsfml-main.a SFML-2.4.2/lib/libsfml-main-d.a SFML-2.4.2/lib/libsfml-network.a SFML-2.4.2/lib/libsfml-network-d.a SFML-2.4.2/lib/libsfml-network-s.a SFML-2.4.2/lib/libsfml-network-s-d.a SFML-2.4.2/lib/libsfml-system.a SFML-2.4.2/lib/libsfml-system-d.a SFML-2.4.2/lib/libsfml-system-s.a SFML-2.4.2/lib/libsfml-system-s-d.a SFML-2.4.2/lib/libsfml-window.a SFML-2.4.2/lib/libsfml-window-d.a SFML-2.4.2/lib/libsfml-window-s.a SFML-2.4.2/lib/libsfml-window-s-d.a SFML-2.4.2/lib/libvorbis.a SFML-2.4.2/lib/libvorbisenc.a SFML-2.4.2/lib/libvorbisfile.a SFML-2.4.2/lib/flac.lib SFML-2.4.2/lib/freetype.lib SFML-2.4.2/lib/jpeg.lib SFML-2.4.2/lib/ogg.lib SFML-2.4.2/lib/openal32.lib SFML-2.4.2/lib/sfml-audio.lib SFML-2.4.2/lib/sfml-audio-d.lib SFML-2.4.2/lib/sfml-audio-s.lib SFML-2.4.2/lib/sfml-audio-s-d.lib SFML-2.4.2/lib/sfml-graphics.lib SFML-2.4.2/lib/sfml-graphics-d.lib SFML-2.4.2/lib/sfml-graphics-s.lib SFML-2.4.2/lib/sfml-graphics-s-d.lib SFML-2.4.2/lib/sfml-main.lib SFML-2.4.2/lib/sfml-main-d.lib SFML-2.4.2/lib/sfml-network.lib SFML-2.4.2/lib/sfml-network-d.lib SFML-2.4.2/lib/sfml-network-s.lib SFML-2.4.2/lib/sfml-network-s-d.lib SFML-2.4.2/lib/sfml-system.lib SFML-2.4.2/lib/sfml-system-d.lib SFML-2.4.2/lib/sfml-system-s.lib SFML-2.4.2/lib/sfml-system-s-d.lib SFML-2.4.2/lib/sfml-window.lib SFML-2.4.2/lib/sfml-window-d.lib SFML-2.4.2/lib/sfml-window-s.lib SFML-2.4.2/lib/sfml-window-s-d.lib SFML-2.4.2/lib/vorbis.lib SFML-2.4.2/lib/vorbisenc.lib SFML-2.4.2/lib/vorbisfile.lib
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Users/melvi/GrabCAD/Lego Router/TRON Router/Code/SFML-2.4.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"C:/Users/melvi/GrabCAD/Lego Router/TRON Router/Code/SFML-2.4.2/include"
+BIN      = Drawing.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Drawing.o: Drawing.cpp
+	$(CPP) -c Drawing.cpp -o Drawing.o $(CXXFLAGS)
